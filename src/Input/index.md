@@ -12,7 +12,7 @@ group:
   order: 2
 ---
 
-This is an example component.
+按钮
 
 ```jsx
 import { Button } from 'ADOU UI';

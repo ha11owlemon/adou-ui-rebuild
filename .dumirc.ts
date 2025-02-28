@@ -1,10 +1,9 @@
 import { defineConfig } from 'dumi'
-
+import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig'
 export default defineConfig({
   outputPath: 'docs-dist',
-  themeConfig: {
+  themeConfig: defineThemeConfig({
     name: 'ADOU UI',
-    themes: ['dumi-theme-antd'],
     nav: {
       mode: 'override',
       value: [
@@ -20,5 +19,11 @@ export default defineConfig({
         },
       ],
     },
-  },
+    bannerConfig: {
+      showBanner: true,
+      bannerImgUrl: 'https://mdn.alipayobjects.com/huamei_iwk9zp/afts/file/A*uYT7SZwhJnUAAAAAAAAAAAAADgCCAQ',
+    },
+    description: '测试测试',
+    title: 'ADOU UI',
+  }),
 })

@@ -14,3 +14,5 @@ This is an example component.
 
 <code src='./demo/basic.tsx'>测试1</code>
 <code src='./demo/test1.tsx'>测试2</code>
+
+这就是一个按钮来着。
