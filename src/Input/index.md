@@ -2,26 +2,13 @@
 category: Components
 title: Input
 subtitle: 输入框
+order: 2
 description: 按钮用于开始一个即时操作。
-cover: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*7va7RKs3YzIAAAAAAAAAAAAADrJ8AQ/original
-coverDark: https://mdn.alipayobjects.com/huamei_7uahnr/afts/img/A*3T4cRqxH9-8AAAAAAAAAAAAADrJ8AQ/original
 demo:
   cols: 2
 group:
-  title: 通用
-  order: 2
+  title: Form表单
+  order: 1
 ---
 
-按钮
-
-```jsx
-import { Button } from 'adou-ui-rebuild';
-
-export default () => <Button>按钮测试</Button>
-```
-
-```jsx
-import { Button } from 'adou-ui-rebuild';
-
-export default () => <Button>按钮测试</Button>
-```
+<!-- <code src="./demo/basic.tsx">基本使用</code> -->

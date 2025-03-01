@@ -3,7 +3,7 @@ const path = require('path');
 const chalk = require('chalk');
 
 const forbiddenChar = '-';
-const includeDirs = ['src/pages'];
+const includeDirs = ['src/'];
 
 // 获取本次提交中新增的文件和目录列表
 const gitStatusOutput = execSync(

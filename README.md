@@ -1,19 +1,8 @@
 # ADOU UI
 
-[![NPM version](https://img.shields.io/npm/v/ADOU UI.svg?style=flat)](https://npmjs.org/package/ADOU UI)
-[![NPM downloads](http://img.shields.io/npm/dm/ADOU UI.svg?style=flat)](https://npmjs.org/package/ADOU UI)
-
 使用纯 Bootstrap 5+ 的 React 组件库
 
-## Usage
-
-TODO
-
-## Options
-
-TODO
-
-## Development
+#### Development
 
 ```bash
 # install dependencies
@@ -36,6 +25,17 @@ $ npm run docs:preview
 
 # check your project for potential problems
 $ npm run doctor
+```
+
+#### husky 配置
+
+```bash
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e HUSKY_GIT_PARAMS"
+    }
+  },
 ```
 
 ## LICENSE

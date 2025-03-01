@@ -21,7 +21,7 @@ export default defineConfig({
         },
       ],
     },
-    github: 'https://github.com/umijs/dumi',
+    github: 'https://github.com/ha11owlemon/adou-ui-rebuild',
     bannerConfig: {
       showBanner: true,
       bannerImgUrl: 'xx',
@@ -57,7 +57,7 @@ export default defineConfig({
           {
             title: 'GitHub',
             icon: 'https://github-production-user-asset-6210df.s3.amazonaws.com/20694238/256181695-b05fa72a-4ab5-479d-bb74-3d723755de47.png',
-            url: 'https://d.umijs.org/',
+            url: 'https://github.com/ha11owlemon/adou-ui-rebuild',
             openExternal: true,
           },
         ],
