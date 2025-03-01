@@ -9,28 +9,28 @@ permissions:
   pages: write # 允许部署 GitHub Pages
   id-token: write
 jobs:
-  # publish-package:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout Code
-  #       uses: actions/checkout@v4
+  publish-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-  #     - name: Setup Node.js
-  #       uses: actions/setup-node@v4
-  #       with:
-  #         node-version: 18
-  #         registry-url: 'https://registry.npmjs.org'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          registry-url: 'https://registry.npmjs.org'
 
-  #     - name: Install Dependencies
-  #       run: npm install
+      - name: Install Dependencies
+        run: npm install
 
-  #     - name: Build Library
-  #       run: npm run build # 确保 package.json 中有 build 脚本
+      - name: Build Library
+        run: npm run build # 确保 package.json 中有 build 脚本
 
-  #     - name: Publish to npm
-  #       run: npm publish --access public
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # 需要先在 GitHub 配置 NPM_TOKEN
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # 需要先在 GitHub 配置 NPM_TOKEN
 
   deploy-docs:
     runs-on: ubuntu-latest
