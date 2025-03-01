@@ -15,13 +15,13 @@ group:
 按钮
 
 ```jsx
-import { Button } from 'ADOU UI';
+import { Button } from 'adou-ui-rebuild';
 
 export default () => <Button>按钮测试</Button>
 ```
 
 ```jsx
-import { Button } from 'ADOU UI';
+import { Button } from 'adou-ui-rebuild';
 
 export default () => <Button>按钮测试</Button>
 ```
