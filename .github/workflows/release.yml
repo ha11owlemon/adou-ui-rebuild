@@ -48,7 +48,7 @@ jobs:
         run: npm run docs:build # dumi 文档构建命令
 
       - name: Sanitize File Paths
-        run: find ./_site -depth -name "*:*" -execdir rename 's/:/_/g' {} \;
+        run: ls && cd /~demos && ls;
 
       - name: Upload build artifacts (上传构建产物)
         uses: actions/upload-artifact@v4
