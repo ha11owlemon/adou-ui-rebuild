@@ -1,7 +1,7 @@
-import { defineConfig } from 'dumi'
-import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig'
+import { defineConfig } from 'dumi';
+import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig';
 export default defineConfig({
-  outputPath: 'docs-dist',
+  outputPath: '_site',
   resolve: {},
   themeConfig: defineThemeConfig({
     name: 'ADOU UI',
@@ -91,12 +91,36 @@ export default defineConfig({
     ],
     rtl: false,
     features: [
-      { title: '更好的编译性能', details: '通过结合使用 Umi 4 MFSU、esbuild、SWC、持久缓存等方案，带来比 dumi 1.x 更快的编译速度' },
-      { title: '内置全文搜索', details: '不需要接入任何三方服务，标题、正文、demo 等内容均可被搜索，支持多关键词搜索，且不会带来产物体积的增加' },
-      { title: '全新主题系统', details: '为主题包增加插件、国际化等能力的支持，且参考 Docusaurus 为主题用户提供局部覆盖能力，更强更易用' },
-      { title: '约定式路由增强', details: '通过拆分路由概念、简化路由配置等方式，让路由生成一改 dumi 1.x 的怪异、繁琐，更加符合直觉' },
-      { title: '资产元数据 2.0', details: '在 1.x 及 JSON Schema 的基础上对资产属性定义结构进行全新设计，为资产的流通提供更多可能' },
-      { title: '继续为组件研发而生', details: '提供与全新的 NPM 包研发工具 father 4 集成的脚手架，为开发者提供一站式的研发体验' },
+      {
+        title: '更好的编译性能',
+        details:
+          '通过结合使用 Umi 4 MFSU、esbuild、SWC、持久缓存等方案，带来比 dumi 1.x 更快的编译速度',
+      },
+      {
+        title: '内置全文搜索',
+        details:
+          '不需要接入任何三方服务，标题、正文、demo 等内容均可被搜索，支持多关键词搜索，且不会带来产物体积的增加',
+      },
+      {
+        title: '全新主题系统',
+        details:
+          '为主题包增加插件、国际化等能力的支持，且参考 Docusaurus 为主题用户提供局部覆盖能力，更强更易用',
+      },
+      {
+        title: '约定式路由增强',
+        details:
+          '通过拆分路由概念、简化路由配置等方式，让路由生成一改 dumi 1.x 的怪异、繁琐，更加符合直觉',
+      },
+      {
+        title: '资产元数据 2.0',
+        details:
+          '在 1.x 及 JSON Schema 的基础上对资产属性定义结构进行全新设计，为资产的流通提供更多可能',
+      },
+      {
+        title: '继续为组件研发而生',
+        details:
+          '提供与全新的 NPM 包研发工具 father 4 集成的脚手架，为开发者提供一站式的研发体验',
+      },
     ],
   }),
-})
+});
