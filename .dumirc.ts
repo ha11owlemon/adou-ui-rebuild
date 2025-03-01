@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig';
 export default defineConfig({
+  exportStatic: {},
   outputPath: '_site',
   resolve: {},
   themeConfig: defineThemeConfig({
