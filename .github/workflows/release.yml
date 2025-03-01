@@ -47,14 +47,14 @@ jobs:
       - name: Build Docs
         run: npm run docs:build # dumi 文档构建命令
 
-      - - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           # 关键修复点：
           github_token: ${{ secrets.ACCESS_KEY }} # 推荐使用部署密钥
           # 或者改用 personal token：
           # github_token: ${{ secrets.GH_PAGES_TOKEN }}
-          
+
           publish_dir: ./docs-dist
           keep_files: false # 建议关闭保留旧文件
           force_orphan: true # 强制清理历史记录
