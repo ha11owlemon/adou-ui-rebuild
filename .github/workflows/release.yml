@@ -7,7 +7,7 @@ on:
 permissions:
   contents: write # 允许推送代码
   pages: write # 允许部署 GitHub Pages
-
+  id-token: write
 jobs:
   # publish-package:
   #   runs-on: ubuntu-latest
