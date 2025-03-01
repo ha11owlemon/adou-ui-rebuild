@@ -51,7 +51,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           # 关键修复点：
-          github_token: ${{ secrets.ACCESS_KEY }} # 推荐使用部署密钥
+          github_token: ${{ secrets.ACCESS_TOKEN }} # 推荐使用部署密钥
           # 或者改用 personal token：
           # github_token: ${{ secrets.GH_PAGES_TOKEN }}
 
