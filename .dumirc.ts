@@ -1,5 +1,5 @@
-import { defineConfig } from 'dumi'
-import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig'
+import { defineConfig } from 'dumi';
+import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig';
 export default defineConfig({
   outputPath: 'docs-dist',
   themeConfig: defineThemeConfig({
@@ -21,9 +21,15 @@ export default defineConfig({
     },
     bannerConfig: {
       showBanner: true,
-      bannerImgUrl: 'https://mdn.alipayobjects.com/huamei_iwk9zp/afts/file/A*uYT7SZwhJnUAAAAAAAAAAAAADgCCAQ',
+      bannerImgUrl: 'xx',
+      bannerMobileImgUrl: 'xx',
     },
     description: '测试测试',
     title: 'ADOU UI',
+    theme: {
+      token: {
+        colorPrimary: '#00b96b',
+      },
+    },
   }),
-})
+});
