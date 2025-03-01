@@ -47,6 +47,9 @@ jobs:
       - name: Build Docs (构建文档)
         run: npm run docs:build # dumi 文档构建命令
 
+      - name: Sanitize File Paths
+        run: find ./_site -depth -name "*:*" -execdir rename 's/:/_/g' {} \;
+
       - name: Upload build artifacts (上传构建产物)
         uses: actions/upload-artifact@v4
         with:
@@ -54,7 +57,7 @@ jobs:
           path: _site
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 推荐使用部署密钥
           # 或者改用 personal token：
